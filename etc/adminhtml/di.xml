@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Aimane Couissi - https://aimanecouissi.com
+ * Copyright © Aimane Couissi 2026–present. All rights reserved.
+ * Licensed under the MIT License. See LICENSE for details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Backend\Block\System\Account\Edit\Form"
+                type="AimaneCouissi\AdminUserStartupPage\Rewrite\Magento\Backend\Block\System\Account\Edit\Form"/>
+    <preference for="Magento\User\Block\Role\Tab\Info"
+                type="AimaneCouissi\AdminUserStartupPage\Rewrite\Magento\User\Block\Role\Tab\Info"/>
+    <preference for="Magento\User\Block\User\Edit\Tab\Main"
+                type="AimaneCouissi\AdminUserStartupPage\Rewrite\Magento\User\Block\User\Edit\Tab\Main"/>
+    <type name="Magento\Backend\Model\Url">
+        <plugin name="aimanecouissi_admin_user_startup_page_magento_backend_model_url_plugin"
+                type="AimaneCouissi\AdminUserStartupPage\Plugin\Magento\Backend\Model\UrlPlugin"/>
+    </type>
+    <type name="Magento\User\Model\User">
+        <plugin name="aimanecouissi_admin_user_startup_page_magento_user_model_user_plugin"
+                type="AimaneCouissi\AdminUserStartupPage\Plugin\Magento\User\Model\UserPlugin"/>
+    </type>
+    <type name="Magento\Authorization\Model\Role">
+        <plugin name="aimanecouissi_admin_user_startup_page_magento_authorization_model_role_plugin"
+                type="AimaneCouissi\AdminUserStartupPage\Plugin\Magento\Authorization\Model\RolePlugin"/>
+    </type>
+</config>

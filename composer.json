@@ -1,0 +1,41 @@
+{
+    "name": "aimanecouissi/module-admin-user-startup-page",
+    "version": "1.0.0",
+    "description": "Add a Startup Page setting to the Admin user and role forms",
+    "type": "magento2-module",
+    "keywords": [
+        "magento2",
+        "magento",
+        "adobe-commerce",
+        "admin",
+        "user",
+        "role",
+        "startup-page"
+    ],
+    "homepage": "https://github.com/aimanecouissi/magento2-module-admin-user-startup-page",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aimane Couissi",
+            "email": "contact@aimanecouissi.com",
+            "homepage": "https://www.aimanecouissi.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "magento/framework": "103.0.*"
+    },
+    "support": {
+        "issues": "https://github.com/aimanecouissi/magento2-module-admin-user-startup-page/issues",
+        "source": "https://github.com/aimanecouissi/magento2-module-admin-user-startup-page"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "AimaneCouissi\\AdminUserStartupPage\\": ""
+        }
+    }
+}

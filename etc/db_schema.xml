@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Aimane Couissi - https://aimanecouissi.com
+ * Copyright © Aimane Couissi 2026–present. All rights reserved.
+ * Licensed under the MIT License. See LICENSE for details.
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="admin_user" resource="default">
+        <column xsi:type="varchar" name="startup_menu_item_id" nullable="true" length="255"
+                comment="Startup Menu Item ID"/>
+    </table>
+    <table name="authorization_role" resource="default">
+        <column xsi:type="varchar" name="startup_menu_item_id" nullable="true" length="255"
+                comment="Startup Menu Item ID"/>
+    </table>
+</schema>
